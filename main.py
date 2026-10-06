@@ -1,11 +1,11 @@
 import psycopg2 
 from PySide6.QtWidgets import QApplication, QMainWindow
-from login import Ui_MainWindow as Login 
-from autorazation import Ui_MainWindow as Auto 
+from ui_login import Ui_MainWindow as Login 
+from ui_autorazation import Ui_MainWindow as Auto 
 
 # Параметры подключения
 conn = psycopg2.connect(
-    dbname="db_pashka",      # имя базы данных
+    dbname="local",      # имя базы данных
     user="postgres", # имя пользователя
     password="12345678",      # пароль
     host="localhost",       # хост (если сервер локальный)
